@@ -1,0 +1,18 @@
+# Never commit secrets / local state
+.env*
+*.local
+.env*.local
+
+# macOS
+.DS_Store
+
+# Local router state (machine-specific, contains API keys/tokens)
+**/.claude-code-router/
+**/config.sqlite*
+**/service.json
+
+# Editor
+.idea/
+.vscode/
+*.swp
+.terraform/

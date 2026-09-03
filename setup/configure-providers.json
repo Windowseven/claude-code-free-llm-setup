@@ -1,0 +1,22 @@
+{
+  "Providers": [
+    {
+      "name": "gemini",
+      "api_base_url": "https://generativelanguage.googleapis.com/v1beta/models/",
+      "api_key": "YOUR_GOOGLE_GEMINI_KEY",
+      "models": ["gemini-3.6-flash"],
+      "transformer": { "use": ["gemini"] }
+    },
+    {
+      "name": "openrouter",
+      "api_base_url": "https://openrouter.ai/api/v1/chat/completions",
+      "api_key": "YOUR_OPENROUTER_KEY",
+      "models": [
+        "nvidia/nemotron-3-super-120b-a12b:free",
+        "nvidia/nemotron-3.5-lightning:free",
+        "minimax/minimax-m3:free"
+      ],
+      "transformer": { "use": ["openrouter"] }
+    }
+  ]
+}
