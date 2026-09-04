@@ -43,6 +43,10 @@ cfg.setdefault("Router", {})["fallback"] = {
     "models": [
         "openrouter/nvidia/nemotron-3-super-120b-a12b:free",
         "openrouter/minimax/minimax-m3:free",
+        "openrouter/z-ai/glm-5.3-flash",
+        "openrouter/deepseek/deepseek-v4-flash",
+        "openrouter/nvidia/nemotron-3-ultra-550b-a55b",
+        "gemini/gemini-3.6-flash",
     ],
     "retryCount": 1,
 }
