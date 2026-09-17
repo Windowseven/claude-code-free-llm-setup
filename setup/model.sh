@@ -10,13 +10,13 @@
 #   ./model.sh blacklist <model-id>               # remove a model from the fallback chain
 #
 # Examples:
-#   ./model.sh add z-ai/glm-5.3-flash
-#   ./model.sh default openrouter/z-ai/glm-5.3-flash
+#   ./model.sh add nvidia/nemotron-3-super-120b-a12b:free
+#   ./model.sh default openrouter/nvidia/nemotron-3-super-120b-a12b:free
 #   ./model.sh default gemini/gemini-3.6-flash[1m]      # back to Gemini
 #
 # Notes:
-#   - MODEL IDs: router uses "provider/<model>" (e.g. openrouter/z-ai/glm-5.3-flash,
-#     gemini/gemini-3.6-flash[1m]). ADD expects the bare OpenRouter id (z-ai/glm-5.3-flash).
+#   - MODEL IDs: router uses "provider/<model>" (e.g. openrouter/nvidia/nemotron-3-super-120b-a12b:free,
+#     gemini/gemini-3.6-flash[1m]). ADD expects the bare OpenRouter id (nvidia/nemotron-3-super-120b-a12b:free).
 #   - Editing is done on config.sqlite with CCR stopped, then CCR is restarted so the
 #     launcher wrapper + global ~/.claude/settings.json are regenerated automatically.
 set -euo pipefail

@@ -47,11 +47,7 @@ Exact file contents referenced by the setup guide. All API keys / tokens shown h
   "api_key": "YOUR_OPENROUTER_KEY",
   "models": [
     "nvidia/nemotron-3-super-120b-a12b:free",
-    "nvidia/nemotron-3.5-lightning:free",
-    "minimax/minimax-m3:free",
-    "z-ai/glm-5.3-flash",
-    "deepseek/deepseek-v4-flash",
-    "nvidia/nemotron-3-ultra-550b-a55b"
+    "nvidia/nemotron-3.5-lightning:free"
   ],
   "transformer": { "use": ["openrouter"] }
 }
@@ -71,10 +67,6 @@ Exact file contents referenced by the setup guide. All API keys / tokens shown h
     "mode": "model-chain",
     "models": [
       "openrouter/nvidia/nemotron-3-super-120b-a12b:free",
-      "openrouter/minimax/minimax-m3:free",
-      "openrouter/z-ai/glm-5.3-flash",
-      "openrouter/deepseek/deepseek-v4-flash",
-      "openrouter/nvidia/nemotron-3-ultra-550b-a55b",
       "gemini/gemini-3.6-flash"
     ],
     "retryCount": 1
